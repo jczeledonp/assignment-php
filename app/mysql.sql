@@ -175,7 +175,7 @@ CREATE TABLE `tms_users` (
 
 INSERT INTO `tms_users` (`id`, `name`, `read_write`, `roles`, `token`, `created`) VALUES
 (1, 'Juan Carlos', 1, '[\"ROLE_ADMIN\", \"ROLE_USER\"]', 'f38adcb5a9f6310cbac75bcab7f7844c', '2021-09-20 23:23:25'),
-(2, 'Readonly user', 2, '[\"ROLE_USER\"]', '49dd891aaffc81b8c716b785c350fa83', '2021-09-20 22:57:14');
+(2, 'Readonly user', 0, '[\"ROLE_USER\"]', '49dd891aaffc81b8c716b785c350fa83', '2021-09-20 22:57:14');
 
 --
 -- Indexes for dumped tables
