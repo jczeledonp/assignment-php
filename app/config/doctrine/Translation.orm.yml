@@ -1,0 +1,66 @@
+App\Entity\Translation:
+    type: entity
+    table: tms_translations
+    repositoryClass: App\Repository\TranslationRepository
+    id:
+        id:
+            type: integer
+            scale: null
+            length: null
+            unique: false
+            nullable: false
+            precision: null
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        key_id:
+            type: integer
+            scale: null
+            length: null
+            unique: false
+            nullable: false
+            precision: null
+        language_id:
+            type: string
+            scale: null
+            length: 255
+            unique: false
+            nullable: false
+            precision: null
+        translation:
+            type: string
+            scale: null
+            length: 255
+            unique: false
+            nullable: false
+            precision: null
+        created:
+            type: datetime
+            scale: null
+            length: null
+            unique: false
+            nullable: false
+            precision: null
+        created_by:
+            type: integer
+            scale: null
+            length: null
+            unique: false
+            nullable: false
+            precision: null
+        updated:
+            type: datetime
+            scale: null
+            length: null
+            unique: false
+            nullable: true
+            precision: null
+        updated_by:
+            type: integer
+            scale: null
+            length: null
+            unique: false
+            nullable: true
+            precision: null
+    lifecycleCallbacks: {  }

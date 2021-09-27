@@ -1,0 +1,18 @@
+App\Entity\Translation:
+    attributes:
+        id:
+            groups: ['tms']
+        key_id:
+            groups: ['tms']
+        language_id:
+            groups: ['tms']
+        translation:
+            groups: ['tms','files']
+        created:
+            groups: ['tms']
+        created_by:
+            groups: ['tms']
+        updated:
+            groups: ['tms']
+        updated_by:
+            groups: ['tms']

@@ -1,0 +1,9 @@
+App\Form\Model\KeyDto:
+    properties:
+        name:
+            - NotBlank: { message: 'You must provide a name for this Key' }
+            - Length:
+                min: 2
+                max: 255
+                minMessage: 'Key name must be at least {{ limit }} characters long'
+                maxMessage: 'Kkey name cannot be longer than {{ limit }} characters'

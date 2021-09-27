@@ -1,0 +1,38 @@
+App\Entity\Language:
+    type: entity
+    table: tms_languages
+    repositoryClass: App\Repository\LanguageRepository
+    id:
+        id:
+            type: integer
+            scale: null
+            length: null
+            unique: false
+            nullable: false
+            precision: null
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        name:
+            type: string
+            scale: null
+            length: 50
+            unique: false
+            nullable: false
+            precision: null
+        iso:
+            type: string
+            scale: null
+            length: 2
+            unique: false
+            nullable: false
+            precision: null
+        rtl:
+            type: boolean
+            scale: null
+            length: null
+            unique: false
+            nullable: false
+            precision: null
+    lifecycleCallbacks: {  }

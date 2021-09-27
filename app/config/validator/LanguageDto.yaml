@@ -1,0 +1,16 @@
+# FOR REFERENCE ONLY. This project doesn't allow CRUD on Language
+App\Form\Model\LanguageDto:
+    properties:
+        name:
+            - NotBlank: ~
+            - Length:
+                min: 2
+                max: 255
+                minMessage: 'The language name must be at least {{ limit }} characters long'
+                maxMessage: 'The language name cannot be longer than {{ limit }} characters'
+        iso:
+            - NotBlank: ~
+            - Length:
+                min: 2
+                max: 2
+                exactMessage: 'Language ISO name must have {{ limit }} characters long (ISO 639-2)'

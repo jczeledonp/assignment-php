@@ -1,0 +1,10 @@
+App\Entity\Language:
+    attributes:
+        id:
+            groups: ['tms']
+        name:
+            groups: ['tms']
+        iso:
+            groups: ['tms']
+        rtl:
+            groups: ['tms']

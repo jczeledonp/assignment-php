@@ -1,0 +1,9 @@
+App\Form\Model\TranslationDto:
+    properties:
+        translation:
+            - NotBlank: { message: 'You must provide a text for this Translation' }
+            - Length:
+                min: 1
+                max: 255
+                minMessage: 'Translation text must be at least {{ limit }} characters long'
+                maxMessage: 'Translation text cannot be longer than {{ limit }} characters'

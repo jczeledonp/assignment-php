@@ -1,0 +1,10 @@
+App\Entity\Key:
+    attributes:
+        id:
+            groups: ['tms']
+        name:
+            groups: ['tms','files']
+        created:
+            groups: ['tms']
+        created_by:
+            groups: ['tms']
